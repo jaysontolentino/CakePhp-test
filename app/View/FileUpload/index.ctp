@@ -1,6 +1,6 @@
 <div class="row-fluid">
 	<div class="alert alert-info">
-		<h3>File Upload Question</h3>
+		<h3>File Upload Answer</h3>
 	</div>
 
 	<p>Complete the File Upload feature and import the attached <?php echo $this->Html->link('<i class="icon-share
@@ -13,17 +13,17 @@
 		<h3>Import Form</h3>
 	</div>
 <?php
-echo $this->Form->create('FileUpload');
-echo $this->Form->input('file', array('label' => 'File Upload', 'type' => 'file'));
+echo $this->Form->create('FileUpload', array('type' => 'file'));
+echo $this->Form->file('file');
 echo $this->Form->submit('Upload', array('class' => 'btn btn-primary'));
 echo $this->Form->end();
 ?>
 
 	<hr />
 
-	<div class="alert alert-success">
+	<!-- <div class="alert alert-success">
 		<h3>Data Imported</h3>
-	</div>
+	</div> -->
 
 	<table class="table table-bordered table-striped">
 		<thead>
