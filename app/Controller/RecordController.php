@@ -9,6 +9,9 @@
 			
 			
 			$records = $this->Record->find('all');
+			// $records = $this->Record->find('list', array(
+			// 	'fields' => array('Record.id', 'Record.name')
+			// ));
 			
 			$this->set('records',$records);
 			
